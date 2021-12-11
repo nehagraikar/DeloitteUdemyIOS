@@ -14,6 +14,18 @@
 		CF940C912764BA8900693853 /* DeloitteUdemyIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940C902764BA8900693853 /* DeloitteUdemyIOSTests.swift */; };
 		CF940C9B2764BA8900693853 /* DeloitteUdemyIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940C9A2764BA8900693853 /* DeloitteUdemyIOSUITests.swift */; };
 		CF940C9D2764BA8900693853 /* DeloitteUdemyIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940C9C2764BA8900693853 /* DeloitteUdemyIOSUITestsLaunchTests.swift */; };
+		CF940CB72764C17100693853 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CB62764C17100693853 /* CourseModel.swift */; };
+		CF940CB92764C1B100693853 /* CourseRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CB82764C1B100693853 /* CourseRowViewModel.swift */; };
+		CF940CBB2764C1C200693853 /* CourseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CBA2764C1C200693853 /* CourseDetailViewModel.swift */; };
+		CF940CBD2764C1D400693853 /* CourseRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CBC2764C1D400693853 /* CourseRowView.swift */; };
+		CF940CBF2764C1E900693853 /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CBE2764C1E900693853 /* CourseDetailView.swift */; };
+		CF940CC12764CBF100693853 /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CC02764CBF100693853 /* CourseListView.swift */; };
+		CF940CC32764CC0600693853 /* CourseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CC22764CC0600693853 /* CourseListViewModel.swift */; };
+		CF940CC92764DCF100693853 /* TabBarGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CC82764DCF000693853 /* TabBarGroupModel.swift */; };
+		CF940CCB2764DD3000693853 /* TabBarGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CCA2764DD3000693853 /* TabBarGroupViewModel.swift */; };
+		CF940CCD2764E0A500693853 /* TabBarGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CCC2764E0A500693853 /* TabBarGroupView.swift */; };
+		CF940CE72764F95300693853 /* HomeWishlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CE62764F95300693853 /* HomeWishlistViewModel.swift */; };
+		CF940CE92764F96100693853 /* HomeWishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CE82764F96100693853 /* HomeWishlistView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +56,18 @@
 		CF940C962764BA8900693853 /* DeloitteUdemyIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeloitteUdemyIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF940C9A2764BA8900693853 /* DeloitteUdemyIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeloitteUdemyIOSUITests.swift; sourceTree = "<group>"; };
 		CF940C9C2764BA8900693853 /* DeloitteUdemyIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeloitteUdemyIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF940CB62764C17100693853 /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
+		CF940CB82764C1B100693853 /* CourseRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRowViewModel.swift; sourceTree = "<group>"; };
+		CF940CBA2764C1C200693853 /* CourseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailViewModel.swift; sourceTree = "<group>"; };
+		CF940CBC2764C1D400693853 /* CourseRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRowView.swift; sourceTree = "<group>"; };
+		CF940CBE2764C1E900693853 /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
+		CF940CC02764CBF100693853 /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
+		CF940CC22764CC0600693853 /* CourseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewModel.swift; sourceTree = "<group>"; };
+		CF940CC82764DCF000693853 /* TabBarGroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarGroupModel.swift; sourceTree = "<group>"; };
+		CF940CCA2764DD3000693853 /* TabBarGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarGroupViewModel.swift; sourceTree = "<group>"; };
+		CF940CCC2764E0A500693853 /* TabBarGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarGroupView.swift; sourceTree = "<group>"; };
+		CF940CE62764F95300693853 /* HomeWishlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWishlistViewModel.swift; sourceTree = "<group>"; };
+		CF940CE82764F96100693853 /* HomeWishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWishlistView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +118,11 @@
 		CF940C7E2764BA8700693853 /* DeloitteUdemyIOS */ = {
 			isa = PBXGroup;
 			children = (
+				CF940CDA2764F8E800693853 /* Profile */,
+				CF940CD92764F8E300693853 /* Cart */,
+				CF940CD82764F8CD00693853 /* HomeWishlist */,
+				CF940CC42764D68600693853 /* TabBarGroup */,
+				CF940CB22764C0E600693853 /* Course */,
 				CF940C7F2764BA8700693853 /* DeloitteUdemyIOSApp.swift */,
 				CF940C812764BA8700693853 /* ContentView.swift */,
 				CF940C832764BA8800693853 /* Assets.xcassets */,
@@ -125,6 +154,157 @@
 				CF940C9C2764BA8900693853 /* DeloitteUdemyIOSUITestsLaunchTests.swift */,
 			);
 			path = DeloitteUdemyIOSUITests;
+			sourceTree = "<group>";
+		};
+		CF940CB22764C0E600693853 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				CF940CB52764C15500693853 /* ViewModel */,
+				CF940CB42764C0F800693853 /* View */,
+				CF940CB32764C0F000693853 /* Model */,
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		CF940CB32764C0F000693853 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF940CB62764C17100693853 /* CourseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF940CB42764C0F800693853 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF940CC02764CBF100693853 /* CourseListView.swift */,
+				CF940CBC2764C1D400693853 /* CourseRowView.swift */,
+				CF940CBE2764C1E900693853 /* CourseDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF940CB52764C15500693853 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF940CC22764CC0600693853 /* CourseListViewModel.swift */,
+				CF940CB82764C1B100693853 /* CourseRowViewModel.swift */,
+				CF940CBA2764C1C200693853 /* CourseDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF940CC42764D68600693853 /* TabBarGroup */ = {
+			isa = PBXGroup;
+			children = (
+				CF940CC72764D6C500693853 /* View */,
+				CF940CC62764D6BD00693853 /* ViewModel */,
+				CF940CC52764D6B300693853 /* Model */,
+			);
+			path = TabBarGroup;
+			sourceTree = "<group>";
+		};
+		CF940CC52764D6B300693853 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF940CC82764DCF000693853 /* TabBarGroupModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF940CC62764D6BD00693853 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF940CCA2764DD3000693853 /* TabBarGroupViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF940CC72764D6C500693853 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF940CCC2764E0A500693853 /* TabBarGroupView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF940CD82764F8CD00693853 /* HomeWishlist */ = {
+			isa = PBXGroup;
+			children = (
+				CF940CE22764F91C00693853 /* ViewModel */,
+				CF940CE12764F91800693853 /* View */,
+			);
+			path = HomeWishlist;
+			sourceTree = "<group>";
+		};
+		CF940CD92764F8E300693853 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				CF940CDF2764F90B00693853 /* ViewModel */,
+				CF940CDE2764F90400693853 /* View */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		CF940CDA2764F8E800693853 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CF940CDD2764F8FC00693853 /* ViewModel */,
+				CF940CDC2764F8F700693853 /* Model */,
+				CF940CDB2764F8F200693853 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CF940CDB2764F8F200693853 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF940CDC2764F8F700693853 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF940CDD2764F8FC00693853 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF940CDE2764F90400693853 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF940CDF2764F90B00693853 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF940CE12764F91800693853 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF940CE82764F96100693853 /* HomeWishlistView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF940CE22764F91C00693853 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF940CE62764F95300693853 /* HomeWishlistViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +437,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF940CC12764CBF100693853 /* CourseListView.swift in Sources */,
+				CF940CCB2764DD3000693853 /* TabBarGroupViewModel.swift in Sources */,
+				CF940CE72764F95300693853 /* HomeWishlistViewModel.swift in Sources */,
+				CF940CC32764CC0600693853 /* CourseListViewModel.swift in Sources */,
+				CF940CC92764DCF100693853 /* TabBarGroupModel.swift in Sources */,
+				CF940CB92764C1B100693853 /* CourseRowViewModel.swift in Sources */,
+				CF940CBB2764C1C200693853 /* CourseDetailViewModel.swift in Sources */,
+				CF940CB72764C17100693853 /* CourseModel.swift in Sources */,
 				CF940C822764BA8700693853 /* ContentView.swift in Sources */,
+				CF940CCD2764E0A500693853 /* TabBarGroupView.swift in Sources */,
+				CF940CE92764F96100693853 /* HomeWishlistView.swift in Sources */,
+				CF940CBF2764C1E900693853 /* CourseDetailView.swift in Sources */,
+				CF940CBD2764C1D400693853 /* CourseRowView.swift in Sources */,
 				CF940C802764BA8700693853 /* DeloitteUdemyIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
