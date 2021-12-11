@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF940C802764BA8700693853 /* DeloitteUdemyIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940C7F2764BA8700693853 /* DeloitteUdemyIOSApp.swift */; };
+		CF940C822764BA8700693853 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940C812764BA8700693853 /* ContentView.swift */; };
+		CF940C842764BA8800693853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF940C832764BA8800693853 /* Assets.xcassets */; };
+		CF940C872764BA8800693853 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF940C862764BA8800693853 /* Preview Assets.xcassets */; };
+		CF940C912764BA8900693853 /* DeloitteUdemyIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940C902764BA8900693853 /* DeloitteUdemyIOSTests.swift */; };
+		CF940C9B2764BA8900693853 /* DeloitteUdemyIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940C9A2764BA8900693853 /* DeloitteUdemyIOSUITests.swift */; };
+		CF940C9D2764BA8900693853 /* DeloitteUdemyIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940C9C2764BA8900693853 /* DeloitteUdemyIOSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF940C8D2764BA8900693853 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF940C742764BA8700693853 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF940C7B2764BA8700693853;
+			remoteInfo = DeloitteUdemyIOS;
+		};
+		CF940C972764BA8900693853 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF940C742764BA8700693853 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF940C7B2764BA8700693853;
+			remoteInfo = DeloitteUdemyIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF940C7C2764BA8700693853 /* DeloitteUdemyIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeloitteUdemyIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF940C7F2764BA8700693853 /* DeloitteUdemyIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeloitteUdemyIOSApp.swift; sourceTree = "<group>"; };
+		CF940C812764BA8700693853 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF940C832764BA8800693853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF940C862764BA8800693853 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF940C8C2764BA8900693853 /* DeloitteUdemyIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeloitteUdemyIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF940C902764BA8900693853 /* DeloitteUdemyIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeloitteUdemyIOSTests.swift; sourceTree = "<group>"; };
+		CF940C962764BA8900693853 /* DeloitteUdemyIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeloitteUdemyIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF940C9A2764BA8900693853 /* DeloitteUdemyIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeloitteUdemyIOSUITests.swift; sourceTree = "<group>"; };
+		CF940C9C2764BA8900693853 /* DeloitteUdemyIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeloitteUdemyIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF940C792764BA8700693853 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF940C892764BA8900693853 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF940C932764BA8900693853 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF940C732764BA8700693853 = {
+			isa = PBXGroup;
+			children = (
+				CF940C7E2764BA8700693853 /* DeloitteUdemyIOS */,
+				CF940C8F2764BA8900693853 /* DeloitteUdemyIOSTests */,
+				CF940C992764BA8900693853 /* DeloitteUdemyIOSUITests */,
+				CF940C7D2764BA8700693853 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF940C7D2764BA8700693853 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF940C7C2764BA8700693853 /* DeloitteUdemyIOS.app */,
+				CF940C8C2764BA8900693853 /* DeloitteUdemyIOSTests.xctest */,
+				CF940C962764BA8900693853 /* DeloitteUdemyIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF940C7E2764BA8700693853 /* DeloitteUdemyIOS */ = {
+			isa = PBXGroup;
+			children = (
+				CF940C7F2764BA8700693853 /* DeloitteUdemyIOSApp.swift */,
+				CF940C812764BA8700693853 /* ContentView.swift */,
+				CF940C832764BA8800693853 /* Assets.xcassets */,
+				CF940C852764BA8800693853 /* Preview Content */,
+			);
+			path = DeloitteUdemyIOS;
+			sourceTree = "<group>";
+		};
+		CF940C852764BA8800693853 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CF940C862764BA8800693853 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF940C8F2764BA8900693853 /* DeloitteUdemyIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF940C902764BA8900693853 /* DeloitteUdemyIOSTests.swift */,
+			);
+			path = DeloitteUdemyIOSTests;
+			sourceTree = "<group>";
+		};
+		CF940C992764BA8900693853 /* DeloitteUdemyIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF940C9A2764BA8900693853 /* DeloitteUdemyIOSUITests.swift */,
+				CF940C9C2764BA8900693853 /* DeloitteUdemyIOSUITestsLaunchTests.swift */,
+			);
+			path = DeloitteUdemyIOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF940C7B2764BA8700693853 /* DeloitteUdemyIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF940CA02764BA8900693853 /* Build configuration list for PBXNativeTarget "DeloitteUdemyIOS" */;
+			buildPhases = (
+				CF940C782764BA8700693853 /* Sources */,
+				CF940C792764BA8700693853 /* Frameworks */,
+				CF940C7A2764BA8700693853 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeloitteUdemyIOS;
+			productName = DeloitteUdemyIOS;
+			productReference = CF940C7C2764BA8700693853 /* DeloitteUdemyIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF940C8B2764BA8900693853 /* DeloitteUdemyIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF940CA32764BA8900693853 /* Build configuration list for PBXNativeTarget "DeloitteUdemyIOSTests" */;
+			buildPhases = (
+				CF940C882764BA8900693853 /* Sources */,
+				CF940C892764BA8900693853 /* Frameworks */,
+				CF940C8A2764BA8900693853 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF940C8E2764BA8900693853 /* PBXTargetDependency */,
+			);
+			name = DeloitteUdemyIOSTests;
+			productName = DeloitteUdemyIOSTests;
+			productReference = CF940C8C2764BA8900693853 /* DeloitteUdemyIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF940C952764BA8900693853 /* DeloitteUdemyIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF940CA62764BA8900693853 /* Build configuration list for PBXNativeTarget "DeloitteUdemyIOSUITests" */;
+			buildPhases = (
+				CF940C922764BA8900693853 /* Sources */,
+				CF940C932764BA8900693853 /* Frameworks */,
+				CF940C942764BA8900693853 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF940C982764BA8900693853 /* PBXTargetDependency */,
+			);
+			name = DeloitteUdemyIOSUITests;
+			productName = DeloitteUdemyIOSUITests;
+			productReference = CF940C962764BA8900693853 /* DeloitteUdemyIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF940C742764BA8700693853 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					CF940C7B2764BA8700693853 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					CF940C8B2764BA8900693853 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = CF940C7B2764BA8700693853;
+					};
+					CF940C952764BA8900693853 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = CF940C7B2764BA8700693853;
+					};
+				};
+			};
+			buildConfigurationList = CF940C772764BA8700693853 /* Build configuration list for PBXProject "DeloitteUdemyIOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF940C732764BA8700693853;
+			productRefGroup = CF940C7D2764BA8700693853 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF940C7B2764BA8700693853 /* DeloitteUdemyIOS */,
+				CF940C8B2764BA8900693853 /* DeloitteUdemyIOSTests */,
+				CF940C952764BA8900693853 /* DeloitteUdemyIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF940C7A2764BA8700693853 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF940C872764BA8800693853 /* Preview Assets.xcassets in Resources */,
+				CF940C842764BA8800693853 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF940C8A2764BA8900693853 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF940C942764BA8900693853 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF940C782764BA8700693853 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF940C822764BA8700693853 /* ContentView.swift in Sources */,
+				CF940C802764BA8700693853 /* DeloitteUdemyIOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF940C882764BA8900693853 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF940C912764BA8900693853 /* DeloitteUdemyIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF940C922764BA8900693853 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF940C9B2764BA8900693853 /* DeloitteUdemyIOSUITests.swift in Sources */,
+				CF940C9D2764BA8900693853 /* DeloitteUdemyIOSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF940C8E2764BA8900693853 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF940C7B2764BA8700693853 /* DeloitteUdemyIOS */;
+			targetProxy = CF940C8D2764BA8900693853 /* PBXContainerItemProxy */;
+		};
+		CF940C982764BA8900693853 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF940C7B2764BA8700693853 /* DeloitteUdemyIOS */;
+			targetProxy = CF940C972764BA8900693853 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CF940C9E2764BA8900693853 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF940C9F2764BA8900693853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF940CA12764BA8900693853 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DeloitteUdemyIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DeloitteUdemyIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF940CA22764BA8900693853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DeloitteUdemyIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DeloitteUdemyIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF940CA42764BA8900693853 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DeloitteUdemyIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeloitteUdemyIOS.app/DeloitteUdemyIOS";
+			};
+			name = Debug;
+		};
+		CF940CA52764BA8900693853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DeloitteUdemyIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeloitteUdemyIOS.app/DeloitteUdemyIOS";
+			};
+			name = Release;
+		};
+		CF940CA72764BA8900693853 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DeloitteUdemyIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DeloitteUdemyIOS;
+			};
+			name = Debug;
+		};
+		CF940CA82764BA8900693853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DeloitteUdemyIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DeloitteUdemyIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF940C772764BA8700693853 /* Build configuration list for PBXProject "DeloitteUdemyIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF940C9E2764BA8900693853 /* Debug */,
+				CF940C9F2764BA8900693853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF940CA02764BA8900693853 /* Build configuration list for PBXNativeTarget "DeloitteUdemyIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF940CA12764BA8900693853 /* Debug */,
+				CF940CA22764BA8900693853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF940CA32764BA8900693853 /* Build configuration list for PBXNativeTarget "DeloitteUdemyIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF940CA42764BA8900693853 /* Debug */,
+				CF940CA52764BA8900693853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF940CA62764BA8900693853 /* Build configuration list for PBXNativeTarget "DeloitteUdemyIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF940CA72764BA8900693853 /* Debug */,
+				CF940CA82764BA8900693853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF940C742764BA8700693853 /* Project object */;
+}
