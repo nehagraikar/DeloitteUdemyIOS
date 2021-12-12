@@ -46,6 +46,7 @@ struct CourseDetailView: View {
                     Spacer()
 
                 }
+                .padding(.top)
                 
                 Divider()
                     .padding()
@@ -140,9 +141,9 @@ struct CourseDetailView: View {
 
 struct ProductDetail_Previews: PreviewProvider {
     
-    @State static var course :CourseModel = CourseModel(id: UUID(), title: "SwiftUI", priceBefore: 130.00,priceAfter: 100.00, description: "jvnjdrv jdfnjv",imageName: "swiftUI")
+    @State static var course :CourseModel = CourseModel(id: 1, title: "SwiftUI", priceBefore: 130.00,priceAfter: 100.00, description: "jvnjdrv jdfnjv",imageName: "swiftUI")
     
-    @State static var cart:[CourseModel] = [CourseModel(id: UUID(), title: "SwiftUI", priceBefore: 130.00,priceAfter: 100.00, description: "",imageName: "swiftUI")]
+    @State static var cart:[CourseModel] = [CourseModel(id: 1, title: "SwiftUI", priceBefore: 130.00,priceAfter: 100.00, description: "",imageName: "swiftUI")]
     
     @State static var wishlist:[CourseModel] = []
     

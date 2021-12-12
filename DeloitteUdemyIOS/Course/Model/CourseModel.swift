@@ -8,9 +8,9 @@
 import Foundation
 import SwiftUI
 
-struct CourseModel : Identifiable{
+struct CourseModel :Hashable, Codable, Identifiable{
 
-    var id:UUID
+    var id:Int
     var title:String
     var priceBefore:Double
     var priceAfter:Double

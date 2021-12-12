@@ -47,9 +47,9 @@ struct CourseRowView: View {
     }
 }
 
-struct PCourseRowView_Previews: PreviewProvider {
+struct CourseRowView_Previews: PreviewProvider {
     
-    @State static var item:CourseModel = CourseModel(id: UUID(), title: "SwiftUI", priceBefore: 130.00,priceAfter: 100.00, description: "",imageName: "swiftUI")
+    @State static var item:CourseModel = CourseModel(id: 1, title: "SwiftUI", priceBefore: 130.00,priceAfter: 100.00, description: "",imageName: "swiftUI")
     
     static var previews: some View {
         CourseRowView(item: item)

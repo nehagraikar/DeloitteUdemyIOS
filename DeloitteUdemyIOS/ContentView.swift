@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var courses = [CourseModel]()
+    @State var cart:[CourseModel] = []
+    @State var wishlist:[CourseModel] = []
+    
     var body: some View {
-        TabBarGroupView()
+        
+        TabBarGroupView(images: TabBarGroupViewModel().data.segmentsList, tabIndex: 0, contentTabs: [
+            AnyView(HomeWishlistView(courses: $courses, cart: $cart, wishlist: $wishlist, title: "Courses")),
+            AnyView(CartView(courses: $cart)),
+            AnyView(HomeWishlistView(courses: $wishlist, cart: $cart, wishlist: $wishlist, title: "Wishlist")),
+            AnyView(Text("Profile"))
+        ]) .onAppear(){
+            apiCall().getCourses{
+                (courses) in
+                self.courses = courses
+                }
+        }
     }
 }
 

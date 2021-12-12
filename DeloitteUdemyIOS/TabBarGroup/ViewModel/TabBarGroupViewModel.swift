@@ -10,9 +10,9 @@ import SwiftUI
 
 class TabBarGroupViewModel {
     var data: TabBarGroupModel
-    @State var courses : [CourseModel]
-    @State var cart:[CourseModel] = []
-    @State var wishlist:[CourseModel] = []
+//    @State var courses : [CourseModel]
+//    @State var cart:[CourseModel] = []
+//    @State var wishlist:[CourseModel] = []
     
     
     public init() {
@@ -22,22 +22,20 @@ class TabBarGroupViewModel {
             Image(systemName: "heart.fill"),
             Image(systemName: "person.fill")
         ])
-        self.courses = [ CourseModel(id: UUID(), title: "SwiftUI", priceBefore: 130.00,priceAfter: 100.00, description: "",imageName: "swiftUI"), CourseModel(id: UUID(), title: "SwiftUI", priceBefore: 130.00,priceAfter: 100.00, description: "",imageName: "swiftUI")]
-        
     }
-    
-    func getRespectiveViewForSelectedSegment(selectedSegment: Int) -> AnyView {
-        switch selectedSegment {
-        case 0:
-            return AnyView(HomeWishlistView(courses: $courses  , cart: $cart, wishlist: $wishlist, title: "Courses"))
-        case 1:
-            return AnyView(Text("Cart"))
-        case 2:
-            return AnyView(HomeWishlistView(courses: $wishlist  , cart: $cart, wishlist: $wishlist, title: "Wishlist"))
-        case 3:
-             return AnyView(Text("Profile.....!"))
-        default:
-            return AnyView(Text("Wrong selection"))
-        }
-    }
+//
+//    func getRespectiveViewForSelectedSegment(selectedSegment: Int) -> AnyView {
+//        switch selectedSegment {
+//        case 0:
+//            return AnyView(HomeWishlistView(courses: $courses  , cart: $cart, wishlist: $wishlist, title: "Courses"))
+//        case 1:
+//            return AnyView(CartView(courses: $cart))
+//        case 2:
+//            return AnyView(HomeWishlistView(courses: $wishlist  , cart: $cart, wishlist: $wishlist, title: "Wishlist"))
+//        case 3:
+//             return AnyView(Text("Profile.....!"))
+//        default:
+//            return AnyView(Text("Wrong selection"))
+//        }
+//    }
 }

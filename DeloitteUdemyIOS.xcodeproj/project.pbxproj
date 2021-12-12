@@ -26,6 +26,8 @@
 		CF940CCD2764E0A500693853 /* TabBarGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CCC2764E0A500693853 /* TabBarGroupView.swift */; };
 		CF940CE72764F95300693853 /* HomeWishlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CE62764F95300693853 /* HomeWishlistViewModel.swift */; };
 		CF940CE92764F96100693853 /* HomeWishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CE82764F96100693853 /* HomeWishlistView.swift */; };
+		CF940CEB27661F3000693853 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CEA27661F2F00693853 /* CartView.swift */; };
+		CF940CED27662DCF00693853 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CEC27662DCF00693853 /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		CF940CCC2764E0A500693853 /* TabBarGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarGroupView.swift; sourceTree = "<group>"; };
 		CF940CE62764F95300693853 /* HomeWishlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWishlistViewModel.swift; sourceTree = "<group>"; };
 		CF940CE82764F96100693853 /* HomeWishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWishlistView.swift; sourceTree = "<group>"; };
+		CF940CEA27661F2F00693853 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		CF940CEC27662DCF00693853 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				CF940CB62764C17100693853 /* CourseModel.swift */,
+				CF940CEC27662DCF00693853 /* ModelData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 		CF940CDE2764F90400693853 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CF940CEA27661F2F00693853 /* CartView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -442,7 +448,9 @@
 				CF940CE72764F95300693853 /* HomeWishlistViewModel.swift in Sources */,
 				CF940CC32764CC0600693853 /* CourseListViewModel.swift in Sources */,
 				CF940CC92764DCF100693853 /* TabBarGroupModel.swift in Sources */,
+				CF940CED27662DCF00693853 /* ModelData.swift in Sources */,
 				CF940CB92764C1B100693853 /* CourseRowViewModel.swift in Sources */,
+				CF940CEB27661F3000693853 /* CartView.swift in Sources */,
 				CF940CBB2764C1C200693853 /* CourseDetailViewModel.swift in Sources */,
 				CF940CB72764C17100693853 /* CourseModel.swift in Sources */,
 				CF940C822764BA8700693853 /* ContentView.swift in Sources */,

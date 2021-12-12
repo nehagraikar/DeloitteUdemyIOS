@@ -32,6 +32,7 @@ struct CourseListView: View {
                 
                 }
             
+            
             }
             .padding(.bottom, 50)
 
@@ -44,7 +45,7 @@ struct CourseListView: View {
 struct CourseListView_Previews: PreviewProvider {
     
 
-    @State static var course:CourseModel = CourseModel(id: UUID(), title: "SwiftUI", priceBefore: 130.00,priceAfter: 100.00, description: "jhncjdncje",imageName: "swiftUI")
+    @State static var course:CourseModel = CourseModel(id: 1, title: "SwiftUI", priceBefore: 130.00,priceAfter: 100.00, description: "jhncjdncje",imageName: "swiftUI")
     @State static var items:[CourseModel] = [course, course, course]
     @State static var cart:[CourseModel] = [course,course]
     

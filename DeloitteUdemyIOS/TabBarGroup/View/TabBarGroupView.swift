@@ -11,14 +11,19 @@ struct TabBarGroupView: View {
     
     @State var images:[Image] = TabBarGroupViewModel().data.segmentsList
     @State var tabIndex: Int = 0
+    @State var contentTabs:[AnyView]
     
     var body: some View {
         ZStack(alignment: .center) {
             
             // Page Content
-            TabBarGroupViewModel().getRespectiveViewForSelectedSegment(selectedSegment: tabIndex)
-            
-            
+//            TabBarGroupViewModel().getRespectiveViewForSelectedSegment(selectedSegment: tabIndex)
+//
+            ForEach(contentTabs.indices) { i in
+                if i == self.tabIndex {
+                    self.contentTabs[i]
+                }
+            }
             // TAB BAR
             VStack {
                 Spacer()
@@ -65,6 +70,11 @@ struct TabBarGroupView_Previews: PreviewProvider {
     static var images:[Image] = TabBarGroupViewModel().data.segmentsList
     
     static var previews: some View {
-        TabBarGroupView(images: images, tabIndex: 0)
+        TabBarGroupView(images: images, tabIndex: 0,contentTabs: [
+            AnyView(Text("Home")),
+            AnyView(Text("Cart")),
+            AnyView(Text("Favorites")),
+            AnyView(Text("Profile"))
+        ])
     }
 }
