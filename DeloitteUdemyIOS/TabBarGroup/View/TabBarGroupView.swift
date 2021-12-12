@@ -9,10 +9,8 @@ import SwiftUI
 
 struct TabBarGroupView: View {
     
-    @State var images:[Image]
-    @State var tabIndex:Int
-    
-    
+    @State var images:[Image] = TabBarGroupViewModel().data.segmentsList
+    @State var tabIndex: Int = 0
     
     var body: some View {
         ZStack(alignment: .center) {

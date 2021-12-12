@@ -12,8 +12,8 @@ struct CourseModel : Identifiable{
 
     var id:UUID
     var title:String
-    var price_before:Double
-    var price_after:Double
+    var priceBefore:Double
+    var priceAfter:Double
     var description:String
     var imageName: String
     
