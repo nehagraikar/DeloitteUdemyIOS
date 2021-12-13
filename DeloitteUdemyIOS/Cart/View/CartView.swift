@@ -139,6 +139,7 @@ struct CartView: View {
             
             
         }
+        .padding(.bottom, 30.0)
         
     }
 }

@@ -111,7 +111,7 @@ struct CourseDetailView: View {
             .padding(16)
             .padding(.bottom, 70)
         }
-        .navigationBarBackButtonHidden(true)
+        //.navigationBarBackButtonHidden(true)
 
     }
 }

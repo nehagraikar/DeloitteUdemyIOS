@@ -29,6 +29,7 @@
 		CF940CF82767179800693853 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CF72767179800693853 /* UserModel.swift */; };
 		CF940CFA2767196B00693853 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CF92767196B00693853 /* UserViewModel.swift */; };
 		CF940CFC27672A9E00693853 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CFB27672A9D00693853 /* ProfileView.swift */; };
+		CF940D0127676D3800693853 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940D0027676D3800693853 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		CF940CF72767179800693853 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		CF940CF92767196B00693853 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		CF940CFB27672A9D00693853 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CF940D0027676D3800693853 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				CF940C832764BA8800693853 /* Assets.xcassets */,
 				CF940C852764BA8800693853 /* Preview Content */,
 				CF940CF22767136F00693853 /* Launch Screen.storyboard */,
+				CF940D0027676D3800693853 /* SearchBar.swift */,
 			);
 			path = DeloitteUdemyIOS;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				CF940CBF2764C1E900693853 /* CourseDetailView.swift in Sources */,
 				CF940CBD2764C1D400693853 /* CourseRowView.swift in Sources */,
 				CF940CFC27672A9E00693853 /* ProfileView.swift in Sources */,
+				CF940D0127676D3800693853 /* SearchBar.swift in Sources */,
 				CF940C802764BA8700693853 /* DeloitteUdemyIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,11 +12,23 @@ struct CourseListView: View {
     
     @Binding var courses:[CourseModel]
     var title : String
+    @State var searchText : String = ""
+    
+    var searchResults: [CourseModel] {
+            if searchText.isEmpty {
+                return courses
+            } else {
+                return courses.filter { $0.title.contains(searchText) }
+            }
+        }
 
     var body: some View {
 
             return NavigationView {
+                VStack{
+            Text("")
             ScrollView(.vertical, showsIndicators: true) {
+                SearchBar(text: $searchText)
                 if courses.count == 0 {
 
                     VStack(alignment: .center, spacing: 4) {
@@ -36,15 +48,22 @@ struct CourseListView: View {
                     .padding(.bottom, 10)
                     
                 }
-                ForEach(courses) { item in
+                List(courses.filter({
+                    searchText.isEmpty ? true : $0.title.contains(searchText)
+                })){
+                    item in
+                    Text(item.title)
+                }
+                
+                ForEach(searchResults, id: \.self) { item in
                     NavigationLink(destination:
                         CourseDetailView(course: item))
                     {
                         CourseRowView(item: item)
                             .padding(.horizontal, 20)
-                            
+
                         }
-                    
+
                     }
                 }
             
@@ -58,8 +77,9 @@ struct CourseListView: View {
                             .foregroundColor(.black)
                 }
             }
+                }
 
-        
+       
     }
 }
 

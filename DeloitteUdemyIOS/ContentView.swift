@@ -11,14 +11,54 @@ struct ContentView: View {
     @AppStorage("courses ") var courses = [CourseModel]()
     @AppStorage("cart") var cart: [CourseModel] = []
     @AppStorage("wishlist") var wishlist: [CourseModel] = []
-
+    
+    @State private var selection = 0
     
     var body: some View {
         
-        TabBarGroupView(images: [Image(systemName: "house.fill"),
-                        Image(systemName: "cart.fill"),
-                        Image(systemName: "heart.fill"),
-                        Image(systemName: "person.fill")], tabIndex: 0) .onAppear(){
+//        TabBarGroupView(images: [Image(systemName: "house.fill"),
+//                        Image(systemName: "cart.fill"),
+//                        Image(systemName: "heart.fill"),
+//                        Image(systemName: "person.fill")], tabIndex: 0)
+        TabView(selection: $selection){
+            CourseListView(courses: $courses, title: "Home")
+                        .tabItem {
+                            VStack {
+                                Image(systemName: "house.fill")
+                                Text("Home")
+                            }
+                        }
+                        .tag(0)
+            CartView()
+                        .tabItem {
+                            VStack {
+                                Image(systemName: "cart.fill")
+                                Text("Cart")
+                            }
+                        }
+                        .tag(1)
+            CourseListView(courses: $wishlist, title: "Wishlist")
+                        .tabItem {
+                            VStack {
+                                Image(systemName: "heart.fill")
+                                Text("Wishlist")
+                            }
+                        }
+                        .tag(2)
+            ProfileView()
+                        .tabItem {
+                            VStack {
+                                Image(systemName: "person.fill")
+                                Text("Profile")
+                            }
+                        }
+                        .tag(3)
+                }
+        .accentColor(Color(hue: 0.081, saturation: 0.991, brightness: 0.888))
+        .onAppear() {
+                UITabBar.appearance().barTintColor = .white
+            }
+        .onAppear(){
             apiCall().getCourses{
                 (courses) in
                 self.courses = courses
