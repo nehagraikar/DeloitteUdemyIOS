@@ -9,22 +9,15 @@ import SwiftUI
 
 struct TabBarGroupView: View {
     
-    @State var images:[Image] = TabBarGroupViewModel().data.segmentsList
+    @State var images:[Image] 
     @State var tabIndex: Int = 0
-    @State var contentTabs:[AnyView]
     
     var body: some View {
-        ZStack(alignment: .center) {
+        ZStack(alignment: .top) {
             
-            // Page Content
+
             TabBarGroupViewModel().getRespectiveViewForSelectedSegment(selectedSegment: tabIndex)
 
-//            ForEach(contentTabs.indices) { i in
-//                if i == self.tabIndex {
-//                    self.contentTabs[i]
-//                }
-//            }
-            // TAB BAR
             VStack {
                 Spacer()
                 VStack(alignment: .center, spacing: 0) {
@@ -67,14 +60,13 @@ struct TabBarGroupView: View {
 
 struct TabBarGroupView_Previews: PreviewProvider {
 
-    static var images:[Image] = TabBarGroupViewModel().data.segmentsList
+    static var images:[Image] = [Image(systemName: "house.fill"),
+                                Image(systemName: "cart.fill"),
+                                Image(systemName: "heart.fill"),
+                                Image(systemName: "person.fill")]
     
     static var previews: some View {
-        TabBarGroupView(images: images, tabIndex: 0,contentTabs: [
-            AnyView(Text("Home")),
-            AnyView(Text("Cart")),
-            AnyView(Text("Favorites")),
-            AnyView(Text("Profile"))
-        ])
+        TabBarGroupView(images: images)
+        
     }
 }

@@ -11,8 +11,10 @@ import SwiftUI
 struct CourseDetailView: View {
     
     var course:CourseModel
-    @Binding var cart:[CourseModel]
-    @Binding var wishlist:[CourseModel]
+    @AppStorage("cart") var cart: [CourseModel] = []
+    @AppStorage("wishlist") var wishlist: [CourseModel] = []
+    
+
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -50,20 +52,7 @@ struct CourseDetailView: View {
                     .padding()
                 HStack(alignment: .center, spacing: 0) {
                     Spacer()
-                    Button(action: {
-                        if self.wishlist.contains(where: { (fav) -> Bool in
-                            fav.id == self.course.id
-                        }) {
-                            self.wishlist.removeAll { (fav) -> Bool in
-                                fav.id == self.course.id
-                            }
-                        } else {
-                            self.wishlist.append(self.course)
-                        }
-                        
-                        
-                        
-                    }) {
+                    Button(action:{ CourseDetailViewModel().addToWishlistButtonFunction(course:self.course)}) {
                         if self.wishlist.contains(where: { (fav) -> Bool in
                             fav.id == course.id
                         }) {
@@ -84,15 +73,7 @@ struct CourseDetailView: View {
                     
                     Spacer()
                     Button(action: {
-                        if self.cart.contains(where: { (item) -> Bool in
-                            item.id == self.course.id
-                        }) {
-                            self.cart.removeAll { (item) -> Bool in
-                                item.id == self.course.id
-                            }
-                        } else {
-                            self.cart.append(self.course)
-                        }
+                        CourseDetailViewModel().addToCartButtonFunction(course:self.course)
                     }) {
                         if self.cart.contains(where: { (item) -> Bool in
                             item.id == self.course.id
@@ -130,19 +111,16 @@ struct CourseDetailView: View {
             .padding(16)
             .padding(.bottom, 70)
         }
+        .navigationBarBackButtonHidden(true)
 
     }
 }
 
 struct ProductDetail_Previews: PreviewProvider {
     
-    @State static var course :CourseModel = CourseModel(id: 1, title: "SwiftUI", priceBefore: 130.00,priceAfter: 100.00, description: "jvnjdrv jdfnjv",imageName: "swiftUI")
-    
-    @State static var cart:[CourseModel] = [CourseModel(id: 1, title: "SwiftUI", priceBefore: 130.00,priceAfter: 100.00, description: "",imageName: "swiftUI")]
-    
-    @State static var wishlist:[CourseModel] = []
-    
+    @State static var course :CourseModel = CourseModel(id: 1, title: "SwiftUI", priceBefore: 130.00,priceAfter: 100.00, description: "SwiftUI",imageName: "swiftUI")
+
     static var previews: some View {
-        CourseDetailView(course: course, cart: $cart, wishlist: $wishlist)
+        CourseDetailView(course: course)
     }
 }

@@ -11,7 +11,8 @@ import SwiftUI
 struct CourseRowView: View {
     
     var item: CourseModel
-    
+
+
     var body: some View {
         VStack{
             HStack(alignment: .center, spacing: 16) {
@@ -23,9 +24,9 @@ struct CourseRowView: View {
                     .cornerRadius(10)
                 VStack(alignment: .leading, spacing: 12) {
                     Text("\(item.title)")
-                        .font(Font.system(size: 17, weight: .regular, design: .rounded))
                         .fontWeight(.bold)
                         .foregroundColor(Color.black)
+                    
                     HStack{
                         Text("Rs.\(String.init(format: "%.2f", item.priceBefore))").strikethrough()
                             .foregroundColor(Color.gray)

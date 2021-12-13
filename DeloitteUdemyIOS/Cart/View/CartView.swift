@@ -10,8 +10,8 @@ import SwiftUI
 
 struct CartView: View {
     
-    @Binding var courses:[CourseModel]
-    
+
+    @AppStorage("cart") var courses: [CourseModel] = []
     @State private var isEditing:Bool = false
     
     
@@ -24,15 +24,16 @@ struct CartView: View {
             ZStack {
 
                 // Header - "Your Cart"
-                
+                VStack{
                 Text("Your Cart")
-                        .font(Font.system(size: 20, weight: .bold, design: .rounded))
+                    .font(Font.system(size: 20, weight: .bold, design: .rounded))
+                    
                 Text("\(courses.count) Item\(courses.count == 1 ? "" : "s")")
                     .font(Font.system(size: 13, weight: .semibold, design: .rounded))
                     .foregroundColor(Color.gray)
-                    .padding(.top, 50)
+                    
                 
-                
+                }
                 
                 HStack {
                     Spacer()
@@ -146,9 +147,9 @@ struct CartView_Previews: PreviewProvider {
     
 
     static var course: CourseModel = CourseModel(id: 1, title: "SwiftUI", priceBefore: 130.00,priceAfter: 100.00, description: "",imageName: "swiftUI")
-    @State static var courses:[CourseModel] = [course,course,course]
+    @State static var c:[CourseModel] = [course,course,course]
     
     static var previews: some View {
-        CartView(courses: $courses)
+        CartView(courses: c)
     }
 }
