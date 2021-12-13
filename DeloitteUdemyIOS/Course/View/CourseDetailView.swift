@@ -14,8 +14,6 @@ struct CourseDetailView: View {
     @Binding var cart:[CourseModel]
     @Binding var wishlist:[CourseModel]
     
-    @State private var showShareSheet = false
-    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 8) {
@@ -100,7 +98,7 @@ struct CourseDetailView: View {
                             item.id == self.course.id
                         }) {
                             HStack(alignment: .center, spacing: 20) {
-                                Text("IN YOUR CART")
+                                Text("ADDED TO CART")
                                 Image(systemName: "checkmark")
                             }
                             .padding(.horizontal, 40)
@@ -127,9 +125,6 @@ struct CourseDetailView: View {
                 }
                 .padding(.horizontal, 10)
                 .padding(.vertical, 10)
-                
-                
-               
 
             }
             .padding(16)

@@ -17,13 +17,13 @@ struct TabBarGroupView: View {
         ZStack(alignment: .center) {
             
             // Page Content
-//            TabBarGroupViewModel().getRespectiveViewForSelectedSegment(selectedSegment: tabIndex)
-//
-            ForEach(contentTabs.indices) { i in
-                if i == self.tabIndex {
-                    self.contentTabs[i]
-                }
-            }
+            TabBarGroupViewModel().getRespectiveViewForSelectedSegment(selectedSegment: tabIndex)
+
+//            ForEach(contentTabs.indices) { i in
+//                if i == self.tabIndex {
+//                    self.contentTabs[i]
+//                }
+//            }
             // TAB BAR
             VStack {
                 Spacer()

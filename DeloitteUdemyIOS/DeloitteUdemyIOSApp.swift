@@ -11,7 +11,7 @@ import SwiftUI
 struct DeloitteUdemyIOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }

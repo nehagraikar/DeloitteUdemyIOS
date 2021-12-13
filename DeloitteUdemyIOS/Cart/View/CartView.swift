@@ -14,15 +14,11 @@ struct CartView: View {
     
     @State private var isEditing:Bool = false
     
-    var cartTotal:Double {
-        get {
-            courses.reduce(0) { (res, prod) -> Double in
-                res + prod.priceAfter
-            }
-        }
-    }
     
     var body: some View {
+        let cartTotal = CartViewModel().getCartTotal(courses: courses)
+        let cartSaved = CartViewModel().getCartSaved(courses: courses)
+
         VStack(alignment: .center, spacing: 0) {
             
             ZStack {
@@ -49,13 +45,14 @@ struct CartView: View {
                         if self.isEditing {
                             Text("Done")
                             .font(Font.system(size: 16, weight: .bold, design: .rounded))
+                            .foregroundColor(Color.orange)
                             .padding(.trailing, 20)
                         } else {
                             Image(systemName: "ellipsis")
                             .padding(.trailing, 20)
                         }
                         
-                    }.foregroundColor(Color(red: 111/255, green: 115/255, blue: 210/255))
+                    }
                 }
                 
                 
@@ -88,13 +85,17 @@ struct CartView: View {
                 HStack(alignment: .center, spacing: 12) {
 
                     
-                    // Total Text
+                    // Total cost and saved amount
                     VStack(alignment: .leading, spacing: 0) {
                         Text("Total:")
                             .foregroundColor(Color.gray)
                             .font(Font.system(size: 14, weight: .semibold, design: .default))
                         Text("Rs.\(String(format: "%.2f", cartTotal))")
                             .font(Font.system(size: 20, weight: .heavy, design: .rounded))
+                        Text("You have saved Rs.\(String(format: "%.2f", cartSaved))")
+                            .font(Font.system(size: 15, design: .rounded))
+                            .fontWeight(.regular)
+                            .foregroundColor(Color.red)
                     }
                     Spacer()
                 }

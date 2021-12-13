@@ -13,7 +13,7 @@ class TabBarGroupViewModel {
 //    @State var courses : [CourseModel]
 //    @State var cart:[CourseModel] = []
 //    @State var wishlist:[CourseModel] = []
-    
+//    
     
     public init() {
         self.data = TabBarGroupModel(segmentsList: [
@@ -23,7 +23,7 @@ class TabBarGroupViewModel {
             Image(systemName: "person.fill")
         ])
     }
-//
+
 //    func getRespectiveViewForSelectedSegment(selectedSegment: Int) -> AnyView {
 //        switch selectedSegment {
 //        case 0:

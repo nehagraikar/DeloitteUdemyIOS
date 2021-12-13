@@ -14,7 +14,10 @@ struct ContentView: View {
     
     var body: some View {
         
-        TabBarGroupView(images: TabBarGroupViewModel().data.segmentsList, tabIndex: 0, contentTabs: [
+        TabBarGroupView(images: [Image(systemName: "house.fill"),
+                        Image(systemName: "cart.fill"),
+                        Image(systemName: "heart.fill"),
+                        Image(systemName: "person.fill")], tabIndex: 0, contentTabs: [
             AnyView(HomeWishlistView(courses: $courses, cart: $cart, wishlist: $wishlist, title: "Courses")),
             AnyView(CartView(courses: $cart)),
             AnyView(HomeWishlistView(courses: $wishlist, cart: $cart, wishlist: $wishlist, title: "Wishlist")),

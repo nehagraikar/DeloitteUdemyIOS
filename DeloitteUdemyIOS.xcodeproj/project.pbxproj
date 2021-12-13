@@ -28,6 +28,12 @@
 		CF940CE92764F96100693853 /* HomeWishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CE82764F96100693853 /* HomeWishlistView.swift */; };
 		CF940CEB27661F3000693853 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CEA27661F2F00693853 /* CartView.swift */; };
 		CF940CED27662DCF00693853 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CEC27662DCF00693853 /* ModelData.swift */; };
+		CF940CEF27670B3800693853 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CEE27670B3700693853 /* CartViewModel.swift */; };
+		CF940CF32767136F00693853 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF940CF22767136F00693853 /* Launch Screen.storyboard */; };
+		CF940CF62767176E00693853 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CF52767176E00693853 /* LoginView.swift */; };
+		CF940CF82767179800693853 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CF72767179800693853 /* UserModel.swift */; };
+		CF940CFA2767196B00693853 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CF92767196B00693853 /* UserViewModel.swift */; };
+		CF940CFC27672A9E00693853 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CFB27672A9D00693853 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +78,12 @@
 		CF940CE82764F96100693853 /* HomeWishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWishlistView.swift; sourceTree = "<group>"; };
 		CF940CEA27661F2F00693853 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		CF940CEC27662DCF00693853 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		CF940CEE27670B3700693853 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		CF940CF22767136F00693853 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CF940CF52767176E00693853 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CF940CF72767179800693853 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CF940CF92767196B00693853 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		CF940CFB27672A9D00693853 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +134,7 @@
 		CF940C7E2764BA8700693853 /* DeloitteUdemyIOS */ = {
 			isa = PBXGroup;
 			children = (
+				CF940CF42767164F00693853 /* Login */,
 				CF940CDA2764F8E800693853 /* Profile */,
 				CF940CD92764F8E300693853 /* Cart */,
 				CF940CD82764F8CD00693853 /* HomeWishlist */,
@@ -131,6 +144,7 @@
 				CF940C812764BA8700693853 /* ContentView.swift */,
 				CF940C832764BA8800693853 /* Assets.xcassets */,
 				CF940C852764BA8800693853 /* Preview Content */,
+				CF940CF22767136F00693853 /* Launch Screen.storyboard */,
 			);
 			path = DeloitteUdemyIOS;
 			sourceTree = "<group>";
@@ -264,6 +278,7 @@
 		CF940CDB2764F8F200693853 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CF940CFB27672A9D00693853 /* ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,6 +286,7 @@
 		CF940CDC2764F8F700693853 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CF940CF72767179800693853 /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +294,7 @@
 		CF940CDD2764F8FC00693853 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CF940CF92767196B00693853 /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -293,6 +310,7 @@
 		CF940CDF2764F90B00693853 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CF940CEE27670B3700693853 /* CartViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -311,6 +329,14 @@
 				CF940CE62764F95300693853 /* HomeWishlistViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF940CF42767164F00693853 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CF940CF52767176E00693853 /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +443,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF940CF32767136F00693853 /* Launch Screen.storyboard in Resources */,
 				CF940C872764BA8800693853 /* Preview Assets.xcassets in Resources */,
 				CF940C842764BA8800693853 /* Assets.xcassets in Resources */,
 			);
@@ -449,15 +476,20 @@
 				CF940CC32764CC0600693853 /* CourseListViewModel.swift in Sources */,
 				CF940CC92764DCF100693853 /* TabBarGroupModel.swift in Sources */,
 				CF940CED27662DCF00693853 /* ModelData.swift in Sources */,
+				CF940CEF27670B3800693853 /* CartViewModel.swift in Sources */,
 				CF940CB92764C1B100693853 /* CourseRowViewModel.swift in Sources */,
 				CF940CEB27661F3000693853 /* CartView.swift in Sources */,
 				CF940CBB2764C1C200693853 /* CourseDetailViewModel.swift in Sources */,
 				CF940CB72764C17100693853 /* CourseModel.swift in Sources */,
 				CF940C822764BA8700693853 /* ContentView.swift in Sources */,
+				CF940CF62767176E00693853 /* LoginView.swift in Sources */,
+				CF940CFA2767196B00693853 /* UserViewModel.swift in Sources */,
 				CF940CCD2764E0A500693853 /* TabBarGroupView.swift in Sources */,
 				CF940CE92764F96100693853 /* HomeWishlistView.swift in Sources */,
+				CF940CF82767179800693853 /* UserModel.swift in Sources */,
 				CF940CBF2764C1E900693853 /* CourseDetailView.swift in Sources */,
 				CF940CBD2764C1D400693853 /* CourseRowView.swift in Sources */,
+				CF940CFC27672A9E00693853 /* ProfileView.swift in Sources */,
 				CF940C802764BA8700693853 /* DeloitteUdemyIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,6 +648,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DeloitteUdemyIOS/Preview Content\"";
@@ -624,6 +657,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -644,6 +678,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DeloitteUdemyIOS/Preview Content\"";
@@ -652,6 +687,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
