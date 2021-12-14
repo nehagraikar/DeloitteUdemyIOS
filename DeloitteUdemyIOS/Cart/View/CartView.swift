@@ -11,13 +11,14 @@ import SwiftUI
 struct CartView: View {
     
 
-    @AppStorage("cart") var courses: [CourseModel] = []
+    @ObservedObject var cartViewModel : CartViewModel = CartViewModel()
+    
     @State private var isEditing:Bool = false
     
     
     var body: some View {
-        let cartTotal = CartViewModel().getCartTotal(courses: courses)
-        let cartSaved = CartViewModel().getCartSaved(courses: courses)
+        let cartTotal = CartViewModel().getCartTotal()
+        let cartSaved = CartViewModel().getCartSaved()
 
         VStack(alignment: .center, spacing: 0) {
             
@@ -28,7 +29,7 @@ struct CartView: View {
                 Text("Your Cart")
                     .font(Font.system(size: 20, weight: .bold, design: .rounded))
                     
-                Text("\(courses.count) Item\(courses.count == 1 ? "" : "s")")
+                    Text("\(cartViewModel.courses.count) Item\(cartViewModel.courses.count == 1 ? "" : "s")")
                     .font(Font.system(size: 13, weight: .semibold, design: .rounded))
                     .foregroundColor(Color.gray)
                     
@@ -63,7 +64,7 @@ struct CartView: View {
             ScrollView(.vertical, showsIndicators: true) {
                 // Items in Cart
                 
-                ForEach(courses, id: \.id) { item in
+                ForEach(cartViewModel.courses, id: \.id) { item in
                     HStack {
                         CourseRowView(item: item)
                             .padding(.horizontal, 20)
@@ -71,7 +72,7 @@ struct CartView: View {
                         
                         if self.isEditing {
                             Button(action: {
-                                self.courses.removeAll { (prod) -> Bool in
+                                self.cartViewModel.courses.removeAll { (prod) -> Bool in
                                     prod.id == item.id
                                 }
                             }) {
@@ -108,7 +109,7 @@ struct CartView: View {
                     Button(action: {
                         
                     }) {
-                        if self.courses.count == 0 {
+                        if self.cartViewModel.courses.count == 0 {
                             HStack(alignment: .center, spacing: 12) {
                                 Text("Cart Empty")
                                 Image(systemName: "xmark")
@@ -148,9 +149,8 @@ struct CartView_Previews: PreviewProvider {
     
 
     static var course: CourseModel = CourseModel(id: 1, title: "SwiftUI", priceBefore: 130.00,priceAfter: 100.00, description: "",imageName: "swiftUI")
-    @State static var c:[CourseModel] = [course,course,course]
-    
+
     static var previews: some View {
-        CartView(courses: c)
+        CartView()
     }
 }

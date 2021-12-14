@@ -9,7 +9,7 @@ import Foundation
 
 import SwiftUI
 
-struct UserModel {
+struct UserModel : Codable {
 
     var id:Int
     var username:String
@@ -25,8 +25,6 @@ struct UserModel {
     var image: Image {
         Image(imageName)
     }
-    
-    
-    
+ 
     
 }

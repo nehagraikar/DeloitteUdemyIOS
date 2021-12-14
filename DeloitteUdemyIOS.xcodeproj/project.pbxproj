@@ -126,6 +126,7 @@
 		CF940C7E2764BA8700693853 /* DeloitteUdemyIOS */ = {
 			isa = PBXGroup;
 			children = (
+				CF940D022767750100693853 /* Search */,
 				CF940CF42767164F00693853 /* Login */,
 				CF940CDA2764F8E800693853 /* Profile */,
 				CF940CD92764F8E300693853 /* Cart */,
@@ -136,7 +137,6 @@
 				CF940C832764BA8800693853 /* Assets.xcassets */,
 				CF940C852764BA8800693853 /* Preview Content */,
 				CF940CF22767136F00693853 /* Launch Screen.storyboard */,
-				CF940D0027676D3800693853 /* SearchBar.swift */,
 			);
 			path = DeloitteUdemyIOS;
 			sourceTree = "<group>";
@@ -293,6 +293,22 @@
 				CF940CF52767176E00693853 /* LoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		CF940D022767750100693853 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CF940D032767750700693853 /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		CF940D032767750700693853 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF940D0027676D3800693853 /* SearchBar.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

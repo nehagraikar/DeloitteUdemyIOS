@@ -9,8 +9,11 @@ import SwiftUI
 
 
 struct LoginView: View {
+
     @State private var username: String = ""
     @State private var password: String = ""
+    @State private var isSecured: Bool = true
+    
     var user = UserViewModel().userData
     var body: some View {
         NavigationView{
@@ -24,9 +27,22 @@ struct LoginView: View {
             TextField("Enter your Username", text: $username)
                 .padding(.all, 20.0)
                 .background(Color(hue: 1.0, saturation: 0.007, brightness: 0.846))
-            TextField("Enter your Password", text: $password)
-                .padding(.all, 20.0)
-                .background(Color(hue: 1.0, saturation: 0.007, brightness: 0.846))
+        
+                    ZStack(alignment: .trailing) {
+                        if isSecured {
+                            SecureField("Enter your Password", text: $password)
+                        } else {
+                            TextField("Enter your Password", text: $password)
+                                           
+                        }
+                        Button(action: {
+                            isSecured.toggle()
+                        }) {
+                            Image(systemName: self.isSecured ? "eye.slash" : "eye")
+                                .accentColor(.gray)
+                        }
+                    }.padding(.all, 20.0).background(Color(hue: 1.0, saturation: 0.007, brightness: 0.846))
+ 
             NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)) {
                             Text("Login")
                     .padding(.horizontal, 40)
@@ -40,7 +56,7 @@ struct LoginView: View {
                 
         }
         .padding(.horizontal, 30.0)
-    }
+        }
     }
 }
 

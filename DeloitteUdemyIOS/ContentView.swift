@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("courses ") var courses = [CourseModel]()
+    @AppStorage("courses") var courses = [CourseModel]()
     @AppStorage("cart") var cart: [CourseModel] = []
     @AppStorage("wishlist") var wishlist: [CourseModel] = []
     
@@ -21,7 +21,7 @@ struct ContentView: View {
 //                        Image(systemName: "heart.fill"),
 //                        Image(systemName: "person.fill")], tabIndex: 0)
         TabView(selection: $selection){
-            CourseListView(courses: $courses, title: "Home")
+            CourseListView(courses: $courses, title: "Courses")
                         .tabItem {
                             VStack {
                                 Image(systemName: "house.fill")
