@@ -10,8 +10,9 @@ import SwiftUI
 @main
 struct DeloitteUdemyIOSApp: App {
     var body: some Scene {
+        
         WindowGroup {
-            LoginView()
+            MainView()
         }
     }
 }

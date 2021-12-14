@@ -30,6 +30,7 @@
 		CF940CFA2767196B00693853 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CF92767196B00693853 /* UserViewModel.swift */; };
 		CF940CFC27672A9E00693853 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CFB27672A9D00693853 /* ProfileView.swift */; };
 		CF940D0127676D3800693853 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940D0027676D3800693853 /* SearchBar.swift */; };
+		CFDBFD792768B39200D5EDB7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBFD782768B39200D5EDB7 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		CF940CF92767196B00693853 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		CF940CFB27672A9D00693853 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CF940D0027676D3800693853 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		CFDBFD782768B39200D5EDB7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				CF940C832764BA8800693853 /* Assets.xcassets */,
 				CF940C852764BA8800693853 /* Preview Content */,
 				CF940CF22767136F00693853 /* Launch Screen.storyboard */,
+				CFDBFD782768B39200D5EDB7 /* MainView.swift */,
 			);
 			path = DeloitteUdemyIOS;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF940CC12764CBF100693853 /* CourseListView.swift in Sources */,
+				CFDBFD792768B39200D5EDB7 /* MainView.swift in Sources */,
 				CF940CCB2764DD3000693853 /* TabBarGroupViewModel.swift in Sources */,
 				CF940CED27662DCF00693853 /* ModelData.swift in Sources */,
 				CF940CEF27670B3800693853 /* CartViewModel.swift in Sources */,

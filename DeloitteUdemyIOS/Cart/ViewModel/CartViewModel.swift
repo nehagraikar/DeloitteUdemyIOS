@@ -6,20 +6,15 @@
 //
 
 import Foundation
-import SwiftUI
-
-class CartViewModel : ObservableObject{
+class CartViewModel{
     
-    @Published
-    @AppStorage("cart") var courses: [CourseModel] = []
-    
-    func getCartTotal() -> Double{
+    func getCartTotal(courses: [CourseModel]) -> Double{
         courses.reduce(0) { (res, course) -> Double in
             res + course.priceAfter
         }
     }
     
-    func getCartSaved() -> Double{
+    func getCartSaved(courses: [CourseModel]) -> Double{
         courses.reduce(0) { (res, course) -> Double in
             res + course.priceBefore - course.priceAfter
         }

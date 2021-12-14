@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ProfileView: View {
     @ObservedObject var userViewModel : UserViewModel = UserViewModel()
-
+    
+    @AppStorage("loggedIn") var loggedIn:Bool = true;
+    
     var body: some View {
-        NavigationView{
+
         VStack(alignment: .center, spacing: 0){
             Text("Profile").font(Font.system(size: 20, weight: .bold, design: .rounded)).padding(.bottom)
             Divider()
@@ -20,7 +22,7 @@ struct ProfileView: View {
             .scaledToFill()
             .frame(width: 150, height: 150, alignment: .center)
             .cornerRadius(100)
-            .padding(.bottom)
+            .padding(.vertical)
             Divider()
             Group{
             HStack{
@@ -96,28 +98,30 @@ struct ProfileView: View {
             Divider()
             .padding(.leading)
             }
-           // LogoutButton
+            LogoutButton
             Spacer()
             }
             
-        }.navigationBarTitle("")
-            .navigationBarHidden(true)
+
     }
     
-//    var LogoutButton: some View{
-//        NavigationLink(destination: LoginView().navigationBarBackButtonHidden(true)) {
-//                        Text("Logout")
-//                .padding(.horizontal, 40)
-//                .padding(.vertical, 10.0)
-//
-//                .foregroundColor(Color.white)
-//                .font(Font.system(size: 17, weight: .semibold, design: .rounded))
-//                .background(Color.orange)
-//                .cornerRadius(10)
-//
-//            }
-//        .padding(.top, 20.0)
-//    }
+    var LogoutButton: some View{
+        ZStack{
+        Button(action: { loggedIn = false
+        }){
+            Text("Logout")
+                                .padding(.horizontal, 40)
+                                .padding(.vertical, 10.0)
+            
+                                .foregroundColor(Color.white)
+                                .font(Font.system(size: 17, weight: .semibold, design: .rounded))
+                                .background(Color.orange)
+                                .cornerRadius(10)
+        }
+        }
+        .padding(.top, 20.0)
+        
+    }
 }
 
 struct ProfileView_Previews: PreviewProvider {
