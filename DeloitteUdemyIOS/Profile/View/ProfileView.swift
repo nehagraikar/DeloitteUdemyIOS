@@ -12,10 +12,37 @@ struct ProfileView: View {
     
     @AppStorage("loggedIn") var loggedIn:Bool = true;
     
+    @Environment(\.editMode) private var editMode
+    
+    @State private var disableTextField = true
+    
     var body: some View {
 
         VStack(alignment: .center, spacing: 0){
-            Text("Profile").font(Font.system(size: 20, weight: .bold, design: .rounded)).padding(.bottom)
+            HStack{
+                Spacer()
+                Text("Profile").font(Font.system(size: 20, weight: .bold, design: .rounded)).padding(.leading, 50.0)
+                    .padding(.bottom, 10.0)
+                Spacer()
+                Button(action: {
+                    withAnimation {
+                        self.disableTextField = !self.disableTextField
+                    }
+                    
+                }) {
+                    if self.disableTextField {
+                        Image(systemName: "ellipsis")
+                        .padding(.trailing, 20)
+                        
+                    } else {
+                        Text("Done")
+                        .font(Font.system(size: 16, weight: .bold, design: .rounded))
+                        .foregroundColor(Color.orange)
+                        .padding(.trailing, 20)
+                    }
+                    
+                }
+            }
             Divider()
             ScrollView{
             userViewModel.userData.image
@@ -32,7 +59,11 @@ struct ProfileView: View {
                         .foregroundColor(Color.gray)
                         .multilineTextAlignment(.leading)
                         .padding(.vertical, 3.0)
-                    Text("\(userViewModel.userData.name)").font(Font.system(size: 25, weight: .semibold, design: .rounded)).padding(.bottom)
+                    TextField("Name",text: $userViewModel.userData.name)
+                        .font(Font.system(size: 25, weight: .semibold, design: .rounded)).padding(.bottom)
+                        .cornerRadius(5)
+                        .disabled(disableTextField)
+//                    Text("\(userViewModel.userData.name)").font(Font.system(size: 25, weight: .semibold, design: .rounded)).padding(.bottom)
                 }
                 Spacer()
                 
@@ -46,7 +77,11 @@ struct ProfileView: View {
                         .foregroundColor(Color.gray)
                         .multilineTextAlignment(.leading)
                         .padding(.vertical, 3.0)
-                    Text("\(userViewModel.userData.bandName)").font(Font.system(size: 25, weight: .semibold, design: .rounded)).padding(.bottom)
+                    TextField("Name",text: $userViewModel.userData.bandName)
+                        .font(Font.system(size: 25, weight: .semibold, design: .rounded)).padding(.bottom)
+                        .cornerRadius(5)
+                        .disabled(disableTextField)
+
                 }
                 Spacer()
                 VStack(alignment: .leading){
@@ -54,7 +89,11 @@ struct ProfileView: View {
                         .foregroundColor(Color.gray)
                         .multilineTextAlignment(.leading)
                         .padding(.vertical, 3.0)
-                    Text("\(userViewModel.userData.role)").font(Font.system(size: 25, weight: .semibold, design: .rounded)).padding(.bottom)
+                    TextField("Name",text: $userViewModel.userData.role)
+                        .font(Font.system(size: 25, weight: .semibold, design: .rounded)).padding(.bottom)
+                        .cornerRadius(5)
+                        .disabled(disableTextField)
+
                 }
                 Spacer()
                 
@@ -68,7 +107,11 @@ struct ProfileView: View {
                         .foregroundColor(Color.gray)
                         .multilineTextAlignment(.leading)
                         .padding(.vertical, 3.0)
-                    Text("\(userViewModel.userData.skills)").font(Font.system(size: 25, weight: .semibold, design: .rounded)).padding(.bottom)
+                    TextField("Name",text: $userViewModel.userData.skills)
+                        .font(Font.system(size: 25, weight: .semibold, design: .rounded)).padding(.bottom)
+                        .cornerRadius(5)
+                        .disabled(disableTextField)
+
                 }
                 Spacer()
                 VStack(alignment: .leading){
@@ -76,7 +119,11 @@ struct ProfileView: View {
                         .foregroundColor(Color.gray)
                         .multilineTextAlignment(.leading)
                         .padding(.vertical, 3.0)
-                    Text("\(userViewModel.userData.level)").font(Font.system(size: 25, weight: .semibold, design: .rounded)).padding(.bottom)
+                    TextField("Name",text: $userViewModel.userData.level)
+                        .font(Font.system(size: 25, weight: .semibold, design: .rounded)).padding(.bottom)
+                        .cornerRadius(5)
+                        .disabled(disableTextField)
+
                 }
                 Spacer()
                 
@@ -90,7 +137,11 @@ struct ProfileView: View {
                         .foregroundColor(Color.gray)
                         .multilineTextAlignment(.leading)
                         .padding(.vertical, 3.0)
-                    Text("\(userViewModel.userData.bio)").font(Font.system(size: 25, weight: .semibold, design: .rounded)).padding(.bottom)
+                    TextField("Name",text: $userViewModel.userData.bio)
+                        .font(Font.system(size: 25, weight: .semibold, design: .rounded)).padding(.bottom)
+                        .cornerRadius(5)
+                        .disabled(disableTextField)
+
                 }
                 Spacer()
                 

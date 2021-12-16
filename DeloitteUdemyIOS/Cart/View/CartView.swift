@@ -83,15 +83,17 @@ struct CartView: View {
                     }
                 }
 
-                // Shipping and Total Row
+                
                 HStack(alignment: .center, spacing: 12) {
 
-                    
+                 
                     // Total cost and saved amount
                     VStack(alignment: .leading, spacing: 0) {
+                        Divider()
                         Text("Total:")
                             .foregroundColor(Color.gray)
                             .font(Font.system(size: 14, weight: .semibold, design: .default))
+                            .padding(.top)
                         Text("Rs.\(String(format: "%.2f", cartTotal))")
                             .font(Font.system(size: 20, weight: .heavy, design: .rounded))
                         Text("You have saved Rs.\(String(format: "%.2f", cartSaved))")
@@ -103,18 +105,21 @@ struct CartView: View {
                 }
                 .padding(.horizontal, 20)
                 .padding(.vertical, 8)
+                Divider()
+                Spacer()
                 
                 // Checkout Button
-                GeometryReader { geometry in
+
                     Button(action: {
                         
                     }) {
-                        if self.courses.count == 0 {
+                        if courses.count == 0 {
                             HStack(alignment: .center, spacing: 12) {
                                 Text("Cart Empty")
                                 Image(systemName: "xmark")
                             }
-                            .frame(width: geometry.size.width - 40, height: 60, alignment: .center)
+                            .padding(.all)
+                            
                             .foregroundColor(Color.white)
                             .font(Font.system(size: 17, weight: .semibold, design: .rounded))
                             .background(Color.gray)
@@ -124,18 +129,17 @@ struct CartView: View {
                                 Text("Checkout")
                                 Image(systemName: "arrow.right")
                             }
-                            .frame(width: geometry.size.width - 40, height: 60, alignment: .center)
+                            .padding(.all)
+                            
                             .foregroundColor(Color.white)
                             .font(Font.system(size: 17, weight: .semibold, design: .rounded))
                             .background(Color(hue: 0.359, saturation: 1.0, brightness: 0.677))
-                            .cornerRadius(20)
+                            .cornerRadius(10)
                         }
                         
                     }
-                }
-                .fixedSize(horizontal: false, vertical: true)
-                .padding([.top, .leading], 30.0)
-                .padding(.bottom, 100) // Add Space at bottom of Scroll View
+                    .padding(.top, 30.0)
+                
             }
             
             
