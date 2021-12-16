@@ -53,18 +53,8 @@ struct LoginView: View {
                                     .background(Color.orange)
                                     .cornerRadius(10)
             }
- 
-//            NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)) {
-//                            Text("Login")
-//                    .padding(.horizontal, 40)
-//                    .padding(.vertical, 10.0)
-//
-//                    .foregroundColor(Color.white)
-//                    .font(Font.system(size: 17, weight: .semibold, design: .rounded))
-//                    .background(Color.orange)
-//                    .cornerRadius(10)
-//            }
-                
+            .padding(.top)
+   
         }
         .padding(.horizontal, 30.0)
         

@@ -15,11 +15,7 @@ struct ContentView: View {
     @State private var selection = 0
     
     var body: some View {
-        
-//        TabBarGroupView(images: [Image(systemName: "house.fill"),
-//                        Image(systemName: "cart.fill"),
-//                        Image(systemName: "heart.fill"),
-//                        Image(systemName: "person.fill")], tabIndex: 0)
+
         TabView(selection: $selection){
             CourseListView(courses: $courses, title: "Courses")
                         .tabItem {
@@ -70,6 +66,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+.previewInterfaceOrientation(.portraitUpsideDown)
     }
 }
 

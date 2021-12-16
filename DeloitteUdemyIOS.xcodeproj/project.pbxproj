@@ -31,6 +31,8 @@
 		CF940CFC27672A9E00693853 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940CFB27672A9D00693853 /* ProfileView.swift */; };
 		CF940D0127676D3800693853 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF940D0027676D3800693853 /* SearchBar.swift */; };
 		CFDBFD792768B39200D5EDB7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBFD782768B39200D5EDB7 /* MainView.swift */; };
+		CFDBFD7D276A2B5900D5EDB7 /* CourseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBFD7A276A2A6200D5EDB7 /* CourseTests.swift */; };
+		CFDBFD7F276A2FC600D5EDB7 /* UserLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBFD7E276A2FC600D5EDB7 /* UserLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		CF940CFB27672A9D00693853 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CF940D0027676D3800693853 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		CFDBFD782768B39200D5EDB7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CFDBFD7A276A2A6200D5EDB7 /* CourseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTests.swift; sourceTree = "<group>"; };
+		CFDBFD7E276A2FC600D5EDB7 /* UserLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				CF940C902764BA8900693853 /* DeloitteUdemyIOSTests.swift */,
+				CFDBFD7A276A2A6200D5EDB7 /* CourseTests.swift */,
+				CFDBFD7E276A2FC600D5EDB7 /* UserLog.swift */,
 			);
 			path = DeloitteUdemyIOSTests;
 			sourceTree = "<group>";
@@ -470,7 +476,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFDBFD7D276A2B5900D5EDB7 /* CourseTests.swift in Sources */,
 				CF940C912764BA8900693853 /* DeloitteUdemyIOSTests.swift in Sources */,
+				CFDBFD7F276A2FC600D5EDB7 /* UserLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

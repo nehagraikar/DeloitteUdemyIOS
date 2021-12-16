@@ -17,6 +17,7 @@ struct ProfileView: View {
         VStack(alignment: .center, spacing: 0){
             Text("Profile").font(Font.system(size: 20, weight: .bold, design: .rounded)).padding(.bottom)
             Divider()
+            ScrollView{
             userViewModel.userData.image
             .resizable()
             .scaledToFill()
@@ -101,6 +102,7 @@ struct ProfileView: View {
             LogoutButton
             Spacer()
             }
+        }
             
 
     }

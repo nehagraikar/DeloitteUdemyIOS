@@ -12,12 +12,13 @@ struct CartView: View {
     
 
     @AppStorage("cart") var courses: [CourseModel] = []
+    
     @State private var isEditing:Bool = false
     
     
     var body: some View {
-        let cartTotal = CartViewModel().getCartTotal(courses: courses)
-        let cartSaved = CartViewModel().getCartSaved(courses: courses)
+        let cartTotal = CartViewModel().getCartTotal()
+        let cartSaved = CartViewModel().getCartSaved()
 
         VStack(alignment: .center, spacing: 0) {
             

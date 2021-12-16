@@ -6,15 +6,18 @@
 //
 
 import Foundation
+import SwiftUI
+
 class CartViewModel{
+    @AppStorage("cart") var courses: [CourseModel] = []
     
-    func getCartTotal(courses: [CourseModel]) -> Double{
+    func getCartTotal() -> Double{
         courses.reduce(0) { (res, course) -> Double in
             res + course.priceAfter
         }
     }
     
-    func getCartSaved(courses: [CourseModel]) -> Double{
+    func getCartSaved() -> Double{
         courses.reduce(0) { (res, course) -> Double in
             res + course.priceBefore - course.priceAfter
         }
